@@ -1,0 +1,13 @@
+{
+  "name": "daily-js-dsa-challenges",
+  "version": "1.0.0",
+  "description": "Welcome to the **Daily DSA Challenges** repository! This project is designed to provide daily coding challenges focused on Data Structures and Algorithms (DSA) to help developers of all levels improve their skills. Each day, a new challenge will be added to the repository, and contributors are welcome to submit their solutions or new challenges via PRs.",
+  "scripts": {
+    "format": "prettier \"**/*.{js,ts}\" --write"
+  },
+  "author": "John Niyontwali",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
