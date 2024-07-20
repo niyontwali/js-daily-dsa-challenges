@@ -64,13 +64,13 @@ console.log(result); // Output: !dlroW ,olleH
 1. **Clone the Repository**:
 
    ```sh
-   git clone https://github.com/niyontwali/daily-dsa-challenges.git
+   git clone https://github.com/niyontwali/js-daily-dsa-challenges.git
    ```
 
 2. **Navigate to the Challenges Directory**:
 
    ```sh
-   cd daily-dsa-challenges
+   cd js-daily-dsa-challenges
    ```
 
 3. **Explore the Challenges**: Open the relevant category folder to find the challenges.
