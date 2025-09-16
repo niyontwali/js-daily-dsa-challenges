@@ -53,7 +53,7 @@ console.log(countDuplicates([1,2,3,4,4,4,5,6,6,8,8,8]));
  * - numberCounts stores counts for up to n unique numbers → O(n)
  * - duplicates stores duplicates (at most n numbers) → O(n)
  *
- * Explanation for Students:
+ * More Explanation:
  * - Time Complexity answers: "How does runtime increase if the input grows?"
  * - Space Complexity answers: "How much extra memory is needed if input grows?"
  * -------------------------------------------------------------------------
