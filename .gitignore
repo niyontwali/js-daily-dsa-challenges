@@ -14,7 +14,6 @@ uploads/images/
 npm-debug.log
 
 # Ignore Visual Studio Code settings folder
-.vscode/
 
 # Ignore JetBrains IDEs settings folder
 .idea/
@@ -59,3 +58,7 @@ node_modules/.cache/
 .DS_Store
 Thumbs.db
 ehthumbs.db
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
