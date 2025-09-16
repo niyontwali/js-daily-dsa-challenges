@@ -38,7 +38,7 @@ console.log(result); // Output: 15
  * - Only a single accumulator variable is used (`sum`)
  * - Memory usage does not grow with input size
  *
- * Explanation for Students:
+ * More Explanation
  * - Time Complexity answers: "How long will this function take as input grows?"
  * - Space Complexity answers: "How much extra memory is needed as input grows?"
  * - Using `reduce` is a concise functional way to compute sums.
