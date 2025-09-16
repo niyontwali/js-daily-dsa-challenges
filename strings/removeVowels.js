@@ -1,27 +1,55 @@
 /**
- * Remove Vowels from a String
- * 
- * Write a function `removeVowels` that takes a string and returns a new string with all vowels removed.
- * For the purpose of this challenge, vowels are 'a', 'e', 'i', 'o', and 'u' (both uppercase and lowercase).
- * The letter 'y' is not considered a vowel.
- * 
+ * Problem:
+ * Given a string, remove all vowels (a, e, i, o, u) in both uppercase and lowercase.
+ * The letter 'y' is NOT considered a vowel.
+ *
  * Examples:
- * removeVowels("This website is for losers LOL!") => "Ths wbst s fr lsrs LL!"
- * removeVowels("Hello World!") => "Hll Wrld!"
- * 
- * @param {string} str - The string from which to remove vowels
- * @return {string} - Returns the new string with all vowels removed
+ * Input: "This website is for losers LOL!"
+ * Output: "Ths wbst s fr lsrs LL!"
+ *
+ * Input: "Hello World!"
+ * Output: "Hll Wrld!"
+ *
+ * Input: "AEIOU aeiou"
+ * Output: ""
+ *
+ * Approach:
+ * - Use a regular expression to match all vowels globally (both lowercase and uppercase)
+ * - Use String.prototype.replace() to remove all vowels in one pass
  */
 
-const removeVowels = (str) => {
-  // Define a regular expression to match all vowels (both uppercase and lowercase)
+const removeVowels = (inputString) => {
+  // Step 1: Define regex for vowels (a, e, i, o, u) in both cases
   const vowelsRegex = /[aeiouAEIOU]/g;
-  
-  // Replace all vowels with an empty string
-  return str.replace(vowelsRegex, '');
+
+  // Step 2: Replace all vowels with an empty string
+  const stringWithoutVowels = inputString.replace(vowelsRegex, '');
+
+  // Step 3: Return the resulting string
+  return stringWithoutVowels;
 };
 
-// Test cases
-console.log(removeVowels("This website is for losers LOL!")); // "Ths wbst s fr lsrs LL!"
-console.log(removeVowels("Hello World!")); // "Hll Wrld!"
-console.log(removeVowels("AEIOU aeiou")); // ""
+// -------------------------------------------------------------------------
+// Example usage
+// -------------------------------------------------------------------------
+console.log(removeVowels("This website is for losers LOL!")); // Output: "Ths wbst s fr lsrs LL!"
+console.log(removeVowels("Hello World!"));                   // Output: "Hll Wrld!"
+console.log(removeVowels("AEIOU aeiou"));                    // Output: ""
+
+/**
+ * -------------------------------------------------------------------------
+ * Efficiency Analysis:
+ *
+ * Time Complexity: O(n)
+ * - n = length of the input string
+ * - replace() with a regex scans through all characters once → O(n)
+ *
+ * Space Complexity: O(n)
+ * - A new string is created with vowels removed → O(n)
+ * - Extra memory grows linearly with input size
+ *
+ * Explanation:
+ * - Time Complexity answers: "How long will it take as the string grows?"
+ * - Space Complexity answers: "How much extra memory is needed as the string grows?"
+ * -------------------------------------------------------------------------
+ */
